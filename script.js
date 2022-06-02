@@ -370,7 +370,7 @@ var City = function(data) {
   }.bind(this));
   this.reset = new Update(this, 0, 0, 1, 'Reset game.');
   this.reset.button.addEventListener('click', function(){
-    if (confirm('Are you sure you want to reset the game?')) {
+    if (confirm('您确定要重置游戏吗？')) {
       localStorage.setItem('cityclicker', '');
       document.body.removeChild(this.container);
       city = new City({});
