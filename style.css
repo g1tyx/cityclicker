@@ -1,0 +1,121 @@
+body, button, h1 {
+  font: 16px monospace;
+  margin: 0;
+}
+
+button, .alt, .newspaper>div {
+  border: 1px solid #000;
+  box-shadow: #000 0 2px 4px;
+}
+
+button {
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:disabled {
+  box-shadow: none;
+  cursor: default;
+}
+
+button:focus {
+  outline:0;
+}
+
+h1 {
+  clear: both;
+  font-weight: bold;
+  text-align: center;
+}
+
+u {
+  border-bottom: 1px solid #666;
+  text-decoration: none;
+}
+
+.alt {
+  background: #fff;
+  display: none;
+  padding: 5px;
+  position: absolute;
+}
+
+button:hover + .alt {
+  display: block;
+}
+
+.city {
+  margin: auto;
+  text-align: center;
+}
+
+.close {
+  cursor: pointer;
+  float: left;
+  margin-right: 5px;
+}
+
+.date {
+  float: right;
+}
+
+.residential button {
+  background: #cfc;
+}
+
+.commercial button {
+  background: #ccf;
+}
+
+.industrial button {
+  background: #ffc;
+}
+
+.newspaper, .panel, .status, .update {
+  margin: auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+.newspaper {
+  text-align: left;
+}
+
+.newspaper h2 {
+  margin-top: 4px;
+}
+
+.newspaper>div {
+  margin: 10px;
+  padding: 10px;
+}
+
+.panel {
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+}
+
+.status {
+  display: block;
+}
+
+.update {
+  padding: 5px;
+}
+
+.update button {
+  background: #eee;
+  margin-right: 5px;
+  width: 100px;
+}
+
+@media (min-width: 900px) {
+  .status {
+    margin: 20px;
+    position: absolute;
+    left: 0;
+  }
+}
